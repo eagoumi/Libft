@@ -29,7 +29,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	st = (char *)malloc((len + 1) * sizeof(char));
 	if (st == NULL)
 		return (NULL);
-	while (s[start + i] && i < len)
+	while (s[start] && i < len)
 	{
 		st[i] = s[start + i];
 		i++;
@@ -40,10 +40,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 // int	main(void)
 // {
-// 	// unsigned int r1;
-// 	char *r = ft_substr("hola", 5, 2);
+// 	unsigned int r1;
+// 	char *r = ft_substr("tripouille", 1, 1);
 // 	// r1 = substr("ABCDEFGH", 9, 9);
 // 	printf("mine :|%s| \n", r);
 // 	// printf("sys : |%s| \n", r1);
-// 	// printf("mine :|%u| \n", r1);
+// 	printf("mine :|%u| \n", r1);
 // }

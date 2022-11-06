@@ -58,7 +58,7 @@ FILES_BNS=	ft_lstnew \
 			ft_lstmap 
 
 OBJ=$(addsuffix .o, $(addprefix $(PATH_OBJ), $(FILES_SRC)))
-OBJ_BONUS=$(addsuffix .o, $(addprefix $(PATH_BNS_OBJ), $(FILES_BNS)))
+OBJ_BONUS=$(addsuffix _bonus.o, $(addprefix $(PATH_BNS_OBJ), $(FILES_BNS)))
 
 
 DEF 	= 	\x1B[1;0m
@@ -84,7 +84,7 @@ $(NAME):
 
 bonus: $(NAME)
 	@for FILE in $(FILES_BNS);do \
-	$(CC) $(addsuffix .c, $(addprefix $(PATH_BNS), $${FILE})) -o $(addsuffix .o, $(addprefix $(PATH_BNS_OBJ), $${FILE})) -I $(INCLUDE_BONUS); \
+	$(CC) $(addsuffix .c, $(addprefix $(PATH_BNS), $${FILE})) -o $(addsuffix _bonus.o, $(addprefix $(PATH_BNS_OBJ), $${FILE})) -I $(INCLUDE_BONUS); \
 	printf "$(PURPLE)[ $(PURPLE)Object file$(WHITE) ||/\/\🔥/\/\|| ==> $(BLUE)$(PATH_BNS_OBJ)$(notdir $${FILE}).o$(SILVER) $(WHITE) <== $(PURPLE)] $(GREEN)Created ✅$(DEF)\n"; \
 	done
 	@ar rcs $(NAME) $(OBJ) $(OBJ_BONUS)
