@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*rsrc;
 	size_t	i;
 
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	rgm = dst;
 	rsrc = (char *)src;
 	i = 0;
@@ -36,8 +38,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 // 	char	src1[100];
 // 	char	dst1[200];
 
-// 	memcpy(dst, src, sizeof(char) * 100);
-// 	ft_memcpy(dst1, src1, sizeof(char) * 100);
-// 	printf("dst : %s \n src : %s\n", dst, src);
-// 	printf("dst1 : %s \n src1 : %s\n", dst1, src1);
+// 	memcpy(NULL, NULL, 3);
+// 	ft_memcpy(NULL, NULL, 3);
+// 	// printf("dst : %s \n src : %s\n", dst, src);
+// 	// printf("dst1 : %s \n src1 : %s\n", dst1, src1);
 // }

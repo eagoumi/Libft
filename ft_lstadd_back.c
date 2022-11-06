@@ -12,23 +12,6 @@
 
 #include "./libft.h"
 
-t_list	*ft_lstlast1(t_list *lst)
-{
-	t_list	*temporaire;
-
-	temporaire = lst;
-	if (temporaire)
-	{
-		while (temporaire->next)
-		{
-			temporaire = temporaire->next;
-		}
-		return (temporaire);
-	}
-	return (temporaire);
-}
-
-
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;
@@ -39,7 +22,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 			*lst = new;
 		else
 		{
-			temp = ft_lstlast1(*lst);
+			temp = ft_lstlast(*lst);
 			temp->next = new;
 		}
 	}

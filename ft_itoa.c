@@ -32,6 +32,28 @@ size_t	ft_revnum(int revn, size_t *div)
 	return (reverse);
 }
 
+size_t	ft_countnum(int revn)
+{
+	size_t	remainder;
+	size_t	reverse;
+	size_t	signe;
+
+	reverse = 0;
+	signe = 0;
+	if (revn == 0)
+		signe = 1;
+	if (revn < 0)
+		signe++;
+	while (revn != 0)
+	{
+		remainder = (revn % 10) * signe;
+		reverse = reverse * 10 + remainder;
+		revn /= 10;
+		signe++;
+	}
+	return (signe);
+}
+
 char	*ft_itoa(int n)
 {
 	int		j;
@@ -42,13 +64,11 @@ char	*ft_itoa(int n)
 	div = 1;
 	numrev = ft_revnum(n, &div);
 	j = 0;
-	itoastr = (char *)malloc(sizeof(char) * 12);
+	itoastr = (char *)malloc(sizeof(char) * (ft_countnum(n) + 1));
 	if (itoastr == NULL)
 		return (NULL);
 	if (n < 0)
-	{
 		itoastr[j++] = '-';
-	}
 	else if (n == 0)
 		itoastr[j++] = '0';
 	while (div > 9)
@@ -58,19 +78,21 @@ char	*ft_itoa(int n)
 		div /= 10;
 		j++;
 	}
-	return (itoastr[j] = '\0', itoastr);
+	itoastr[j] = '\0';
+	return (itoastr);
 }
 
 // int	main(void)
 // {
 // 	long long	n;
-// 	char		*str;
-// 	long long	str1;
+// 	// char		*str;
+// 	// long long	str1;
 
-// 	n = 0;
-// 	str = ft_itoa(n);
-// 	str1 = ft_revnum(n);
-// 	printf("number are = %lld\n", n);
-// 	printf("number are rev = %lld\n", str1);
-// 	printf("int are converted to string are = %s\n", str);
+// 	n = 100;
+// 	// str = ft_itoa(n);
+// 	// str1 = ft_revnum(n);
+// 	// printf("number are = %lld\n", n);
+// 	// printf("number are rev = %lld\n", str1);
+// 	// printf("int are converted to string are = %s\n", str);
+// 	printf("%zu", ft_countnum(n));
 // }

@@ -38,6 +38,7 @@ int	ft_atoi(const char *str)
 	}
 	return (signe * x);
 }
+
 // int main(void)
 // {
 // 	char s[] = "+101";
