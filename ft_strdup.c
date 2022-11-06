@@ -17,8 +17,6 @@ char	*ft_strdup(const char *s1)
 	int		i;
 	char	*s2;
 
-	if (s1 == NULL)
-		return (NULL);
 	s2 = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (s2 == NULL)
 		return (NULL);
@@ -32,10 +30,10 @@ char	*ft_strdup(const char *s1)
 	return (s2);
 }
 
-/*
-int main()
-{
-	char sr[] = "sssssssss";
-		printf("%s\n", ft_strdup(sr));
-}
-*/
+// int main()
+// {
+// 	char *sr;
+// 		printf("%s\n", ft_strdup(NULL));
+// 		// printf("%s\n", strdup(NULL));
+
+// }

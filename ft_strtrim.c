@@ -82,7 +82,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = ft_checkstart(s1, set, 0);
 	j = ft_checkend(s1, set, 0);
 	temp = ft_substr(s1, i, (j - i));
+	if (temp == NULL)
+		return (NULL);
 	str = ft_strdup(temp);
+	if (str == NULL)
+		return (NULL);
 	free(temp);
 	return (str);
 }
@@ -90,9 +94,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 // int	main(void)
 // {
 // 	char	*result1;
+// 	char	*s1 = "   \t  \n\n \t\t  \n\n\nHe";
 
-// 	result1 = ft_strtrim("xxxxxdddddxxxx", "x");
+// 	result1 = ft_strtrim(s1, " \n\t");
 // 	printf("string are : %s\n", result1);
+// 	if (result1 == ((void *)0))
+//         printf("dddddd");
+// 	else
+// 		printf("hhhhhhh");
 // 	// printf("string are : %s", s, strlen("tripouille") + 1;
 
 // 	// "xxxxxxxxxxxxxxx", "x"

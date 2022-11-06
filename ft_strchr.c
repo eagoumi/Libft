@@ -15,15 +15,11 @@
 char	*ft_strchr(const char *ch, int s)
 {
 	size_t	j;
-	int		i;
+	size_t	i;
 
 	i = 0;
-	if (ch == NULL)
-		return (NULL);
 	j = ft_strlen(ch);
-	if (s == 0)
-		return ((char *)(ch + j));
-	while (ch[i])
+	while (ch != 0 && i <= j)
 	{
 		if (ch[i] == (char )s)
 			return ((char *)(ch + i));
@@ -35,13 +31,14 @@ char	*ft_strchr(const char *ch, int s)
 // int	main(void)
 // {
 // 	char	*str;
-// 	char	*s;
+// 	// char	*s;
 
 // 	// s = "agou"
 // 	// int i = 0;
 // 	// str = ft_strchr("agoumi", 0);
-// 	printf("%s", ft_strchr("agoumi", 0));
-// 	printf("%s", strchr("agoumi", 0));
+// 	const char *s = "teste";
+// 	printf("%p\n", ft_strchr(s, '\0'));
+// 	printf("%p\n", strchr(s, '\0'));
 // 	// printf ("%c\n", *str);
 // 	// printf("%c", *strchr("agoumi", "gou"));
 // }
