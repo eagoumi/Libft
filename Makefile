@@ -55,7 +55,6 @@ FILES_BNS=	ft_lstadd_back.c\
 
 OBJ=$(addprefix $(PATH_OBJ), $(FILES_SRC:.c=.o))
 OBJ_BONUS=$(addprefix $(PATH_OBJ), $(FILES_BNS:.c=.o))
-#OBJ_BONUS=
 
 DEF 	= 	\x1B[1;0m
 RED 	= 	\x1B[1;31m
@@ -71,7 +70,7 @@ all: $(NAME)
 
 $(NAME):$(OBJ)
 	@ar rcs $(NAME) $(OBJ)
-	@printf "\n\t\t\t      $(RED)$(NAME) $(GREEN) CREATED |✅| \n"
+	@printf "\n\t\t\t\t\t\t      $(RED)$(NAME) $(GREEN) 𝘾 𝙍 𝙀 𝘼 𝙏 𝙀 𝘿  ✅ \n"
 
 
 bonus: $(OBJ_BONUS)  $(NAME)
@@ -80,26 +79,25 @@ bonus: $(OBJ_BONUS)  $(NAME)
 $(PATH_OBJ)%.o:./%.c
 	@mkdir -p $(PATH_OBJ)
 	@$(CC) -c $< -o $@
-	@printf "$(SILVER)[$(PURPLE)Object file$(BLUE) $(notdir $@)$(SILVER)] $(GREEN)Created.$(DEF)\n" 
+	@printf "\t\t$(SILVER)[$(PURPLE)Object file of $(WHITE)$< $(BLUE)  ======>  $(WHITE)$(PATH_OBJ)$(notdir $@)   $(RED)>>>>$(GREEN)🅳 🅾 🅽 🅴 $(RED)<<<<$(SILVER)] $(GREEN)         🅲  🆁  🅴  🅰  🆃  🅴  🅳\n\n" 
 
 clean:
 	@rm -rf $(PATH_OBJ)
-	@printf "\n$(BLUE)|🤧 - 🤧 - 🤧 - 🤧 - 🤧 - 🤧| $(RED) Cleaning are Completed $(YELLOW)|✅ - ✅ - ✅ - ✅ - ✅ - ✅|\n"
+	@printf "\n\t$(BLUE)|🤧 - 🤧 - 🤧 - 🤧 - 🤧 - 🤧|\t$(RED)𝘾 𝙇 𝙀 𝘼 𝙉 𝙄 𝙉 𝙂   𝘼 𝙍 𝙀   𝘾 𝙊 𝙈 𝙋 𝙇 𝙀 𝙏 𝙀 𝘿\t$(YELLOW)|✅ - ✅ - ✅ - ✅ - ✅ - ✅|\n\n"
 
 fclean: clean
 	@rm -f $(NAME)
-	@printf "\n$(YELLOW)|🚮 - 🚮 - 🚮 - 🚮 - 🚮 - 🚮| $(RED) Fcleaning are Completed $(BLUE)|✅ - ✅ - ✅ - ✅ - ✅ - ✅|\n"; \
+	@printf "\n\t$(YELLOW)|🚮 - 🚮 - 🚮 - 🚮 - 🚮 - 🚮|\t$(RED)𝙁 𝙊 𝙍 𝘾 𝙀   𝘾 𝙇 𝙀 𝘼 𝙉 𝙄 𝙉 𝙂   𝘼 𝙍 𝙀   𝘾 𝙊 𝙈 𝙋 𝙇 𝙀 𝙏 𝙀 𝘿    $(BLUE)|✅ - ✅ - ✅ - ✅ - ✅ - ✅|\n\n"; \
 
-	@printf "\n" \
 
 re: fclean bonus all
-	@printf "\n\t\t$(YELLOW)             ==$(GREEN)--------------------$(YELLOW)== $(BLUE)\n"
-	@printf "\t\t$(YELLOW)             ||$(GREEN)--------------------$(YELLOW)||\n"
-	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||\n"
-	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||\n"
-	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||"
-	@printf "\n\t\t$(YELLOW)             ||$(GREEN)--------------------$(YELLOW)||\n"
-	@printf "\t\t$(YELLOW)             ==$(GREEN)--------------------$(YELLOW)== $(BLUE)\n"
+	@printf "\n\t\t\t$(YELLOW)               ==$(GREEN)---------------------------------------------------$(YELLOW)== $(BLUE)\n"
+	@printf "\t\t\t$(YELLOW)               ||$(GREEN)---------------------------------------------------$(YELLOW)||\n"
+	@printf "\t\t\t$(YELLOW)               ||$(GREEN) 𝙍 𝙀 - 𝙈 𝘼 𝙆 𝙄 𝙉 𝙂   𝘼 𝙍 𝙀   𝘾 𝙊 𝙈 𝙋 𝙇 𝙀 𝙏 𝙀 𝘿   ✅$(YELLOW)||\n"
+	@printf "\t\t\t$(YELLOW)               ||$(GREEN) 𝙍 𝙀 - 𝙈 𝘼 𝙆 𝙄 𝙉 𝙂   𝘼 𝙍 𝙀   𝘾 𝙊 𝙈 𝙋 𝙇 𝙀 𝙏 𝙀 𝘿   ✅$(YELLOW)||\n"
+	@printf "\t\t\t$(YELLOW)               ||$(GREEN) 𝙍 𝙀 - 𝙈 𝘼 𝙆 𝙄 𝙉 𝙂   𝘼 𝙍 𝙀   𝘾 𝙊 𝙈 𝙋 𝙇 𝙀 𝙏 𝙀 𝘿   ✅$(YELLOW)||"
+	@printf "\n\t\t\t$(YELLOW)               ||$(GREEN)---------------------------------------------------$(YELLOW)||\n"
+	@printf "\t\t\t$(YELLOW)               ==$(GREEN)---------------------------------------------------$(YELLOW)== $(BLUE)\n"
 
 
-.PHONY: all clean fclean re bonus addObjbonus
+.PHONY: all clean fclean re bonus
