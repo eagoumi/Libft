@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 21:45:07 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 19:47:54 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:30:49 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-// int	main(void)
-// {
-// 	char	*str;
+/*int	main(void)
+{
+	char	*str;
 
-// 	str = ft_strjoin("jj", NULL);
-// 	printf("|%s|\n", str);
-// }
+	str = ft_strjoin("jj", NULL);
+	printf("|%s|\n", str);
+}*/

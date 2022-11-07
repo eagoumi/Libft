@@ -6,7 +6,7 @@
 /*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 16:13:56 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/06 23:08:44 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/07 22:40:09 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,15 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (rgm);
 }
 
-// int	main(void)
-// {
-// 	char	src[100];
-// 	char	dst[200];
-// 	char	src1[100];
-// 	char	dst1[200];
+/*int	main(void)
+{
+	char	src[100];
+	char	dst[200];
+	char	src1[100];
+	char	dst1[200];
 
-// 	memcpy(NULL, NULL, 3);
-// 	ft_memcpy(NULL, NULL, 3);
-// 	// printf("dst : %s \n src : %s\n", dst, src);
-// 	// printf("dst1 : %s \n src1 : %s\n", dst1, src1);
-// }
+	memcpy(NULL, NULL, 3);
+	ft_memcpy(NULL, NULL, 3);
+	printf("dst : %s \n src : %s\n", dst, src);
+	printf("dst1 : %s \n src1 : %s\n", dst1, src1);
+}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:44:21 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 19:47:55 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 21:42:44 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ int	ft_atoi(const char *str)
 	return (signe * x);
 }
 
-// int main(void)
-// {
-// 	char s[] = "+101";
-// 	printf("|%d|\n", ft_atoi((s)));
-// 	printf("|%d|", atoi(s));
-// }
+/*int main(void)
+{
+	char s[] = "+101";
+	printf("|%d|\n", ft_atoi((s)));
+	printf("|%d|", atoi(s));
+}*/

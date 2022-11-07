@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 03:32:36 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 19:47:54 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:07:22 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,15 @@ char	*ft_strchr(const char *ch, int s)
 	return (NULL);
 }
 
-// int	main(void)
-// {
-// 	char	*str;
-// 	// char	*s;
+/*int	main(void)
+{
+	char	*str;
+	char	*s;
 
-// 	// s = "agou"
-// 	// int i = 0;
-// 	// str = ft_strchr("agoumi", 0);
-// 	const char *s = "teste";
-// 	printf("%p\n", ft_strchr(s, '\0'));
-// 	printf("%p\n", strchr(s, '\0'));
-// 	// printf ("%c\n", *str);
-// 	// printf("%c", *strchr("agoumi", "gou"));
-// }
+	s = "agou";
+	int i = 0;
+	str = ft_strchr("agoumi", 0);
+	const char *s = "teste";
+	printf("%p\n", ft_strchr(s, '\0'));
+	printf("%p\n", strchr(s, '\0'));
+}*/

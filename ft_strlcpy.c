@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 22:48:09 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 19:47:54 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:40:39 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (srcsize);
 }
 
-// int	main(void)
-// {
-// 	char s[24] = "coucou";
-// 	char d[10] = "AAAAAAAAAA";
+/*int	main(void)
+{
+	char s[24] = "coucou";
+	char d[10] = "AAAAAAAAAA";
 
-// 	printf("%s + %s = %ld\n", s, d, ft_strlcpy(d, s, 7));
-// 	printf("%s + %s = %ld\n", s, d, ft_memcmp(d, s, 7));
+	printf("%s + %s = %ld\n", s, d, ft_strlcpy(d, s, 7));
+	printf("%s + %s = %ld\n", s, d, ft_memcmp(d, s, 7));
 
-// 	printf("%s + %s = %ld\n", s, d, strlcpy(d, s, 7));
-// 	printf("%s + %s = %ld\n", s, d, memcmp(d, s, 7));
+	printf("%s + %s = %ld\n", s, d, strlcpy(d, s, 7));
+	printf("%s + %s = %ld\n", s, d, memcmp(d, s, 7));
 
-// 	// printf("%s + %C = %d", s, d[7], strcmp(s, d));
-// }
+	printf("%s + %C = %d", s, d[7], strcmp(s, d));
+}*/

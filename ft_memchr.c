@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 05:15:42 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 19:47:54 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:03:46 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-// int	main(void)
-// {
-// 	char	*s, *s4;
-// 	s = ft_memchr("agoumi82@gmail.com", '@', 5);
-// 	s4 = memchr("agoumi82@gmail.com", '@', 5);
-// 	printf("mine : |%s| \n sys : |%s| \n",s, s4);
-// }
+/*int	main(void)
+{
+	char	*s, *s4;
+	s = ft_memchr("agoumi82@gmail.com", '@', 5);
+	s4 = memchr("agoumi82@gmail.com", '@', 5);
+	printf("mine : |%s| \n sys : |%s| \n",s, s4);
+}*/

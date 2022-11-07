@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 04:04:51 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 20:44:49 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:06:44 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,26 +95,26 @@ char	**ft_split(char const *s, char c)
 	return (big);
 }
 
-// int main(void)
-// {
-// 	char **sp, **tab, *splitme, **sd;
-// 	int i;
+/*int main(void)
+{
+	char **sp, **tab, *splitme, **sd;
+	int i;
 
-// 	sp = ft_split("Tripouille ", ' ');
-// 	i = 0;
-// 	while (sp[i])
-// 	{
-// 		printf(" loup |sp[%d]| =%s-l\n", i, sp[i]);
-// 		i++;
-// 	}
-// 	printf("strcmp = %d\n", strcmp(sp[0], "Tripouille"));
-// 	splitme = strdup("Tripouille ");
-// 	tab = ft_split(splitme, ' ');
-// 	printf("sp[|0|] =%s-l\n", sp[0]);
-// 	printf("splitme =%s-l\n", splitme);
-// 	printf("tab[|0|] =%s-l\n", tab[0]);
-// 	printf("strcmp = %d\n", strcmp(tab[0], "Tripouille"));
-// 	sd = "ssssssss";
-// 	i = 0;
-// 	printf(" loup |sp[%d]| =%s-l\n", i, sp[i]);
-// }
+	sp = ft_split("Tripouille ", ' ');
+	i = 0;
+	while (sp[i])
+	{
+		printf(" loup |sp[%d]| =%s-l\n", i, sp[i]);
+		i++;
+	}
+	printf("strcmp = %d\n", strcmp(sp[0], "Tripouille"));
+	splitme = strdup("Tripouille ");
+	tab = ft_split(splitme, ' ');
+	printf("sp[|0|] =%s-l\n", sp[0]);
+	printf("splitme =%s-l\n", splitme);
+	printf("tab[|0|] =%s-l\n", tab[0]);
+	printf("strcmp = %d\n", strcmp(tab[0], "Tripouille"));
+	sd = "ssssssss";
+	i = 0;
+	printf(" loup |sp[%d]| =%s-l\n", i, sp[i]);
+}*/

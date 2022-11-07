@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 04:03:14 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 20:53:04 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 23:50:41 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,16 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+
+/*void	ft_fonc(void *content)
+{
+	printf("%s", content);
+}
+
+int	main(void)
+{
+	t_list	*temp;
+
+	temp = ft_lstnew("agoumi");
+	ft_lstiter(temp, &ft_fonc);
+}*/

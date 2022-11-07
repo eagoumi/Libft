@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 06:59:36 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 19:47:54 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 22:07:40 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ char	*ft_strdup(const char *s1)
 	return (s2);
 }
 
-// int main()
-// {
-// 	char *sr;
-// 		printf("%s\n", ft_strdup(NULL));
-// 		// printf("%s\n", strdup(NULL));
+/*int main()
+{
+	char *sr;
+		printf("%s\n", ft_strdup(NULL));
+		printf("%s\n", strdup(NULL));
 
-// }
+}*/

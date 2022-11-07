@@ -6,7 +6,7 @@
 /*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 11:36:10 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 19:34:40 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/07 22:40:36 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,17 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	}
 	return (lensrc + size);
 }
+
+/*int	main(void)
+{
+	char s[24] = "coucou";
+	char d[10] = "AAAAAAAAAA";
+
+	printf("%s + %s = %ld\n", s, d, ft_strlcat(d, s, 7));
+	printf("%s + %s = %ld\n", s, d, ft_memcmp(d, s, 7));
+
+	printf("%s + %s = %ld\n", s, d, strlcat(d, s, 7));
+	printf("%s + %s = %ld\n", s, d, memcmp(d, s, 7));
+
+	printf("%s + %C = %d", s, d[7], strcmp(s, d));
+}*/

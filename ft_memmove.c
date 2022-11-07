@@ -30,3 +30,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest2);
 }
+
+/*int	main(void)
+{
+	char	src[100];
+	char	dst[200];
+	char	src1[100];
+	char	dst1[200];
+
+	memmove(NULL, NULL, 3);
+	ft_memmove(NULL, NULL, 3);
+	printf("dst : %s \n src : %s\n", dst, src);
+	printf("dst1 : %s \n src1 : %s\n", dst1, src1);
+}*/

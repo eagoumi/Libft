@@ -6,7 +6,7 @@
 /*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 19:07:31 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/06 23:08:25 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/07 21:51:21 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,23 +54,23 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (params.new_lst);
 }
 
-// void    *del(void *i)
-// {
-// 	printf("leet");
-// }
+/*void    *del(void *i)
+{
+	printf("leet");
+}
 
-// int main()
-// {
-//   t_list  *test;
-//   test = ft_lstnew("leet");
-//   test->next = ft_lstnew("1337");
-//   test->next->next = ft_lstnew("coding");
-//   test->next->next->next = ft_lstnew("school");
-//   t_list *result = ft_lstmap(test, &ft_strdup, del);
-//   while (result)
-//   {
-//     printf("%s <---> ", result->content);
-//     result = result->next;
-//   }
-//   return 0;
-// }
+int main()
+{
+  t_list  *test;
+  test = ft_lstnew("leet");
+  test->next = ft_lstnew("1337");
+  test->next->next = ft_lstnew("coding");
+  test->next->next->next = ft_lstnew("school");
+  t_list *result = ft_lstmap(test, &ft_strdup, del);
+  while (result)
+  {
+    printf("%s <---> ", result->content);
+    result = result->next;
+  }
+  return 0;
+}*/

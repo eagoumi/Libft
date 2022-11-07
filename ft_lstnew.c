@@ -6,7 +6,7 @@
 /*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 21:59:42 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 17:43:40 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/07 22:00:51 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,14 @@ t_list	*ft_lstnew(void *content)
 	return (str);
 }
 
-// int	main(void)
-// {
-// 	ft_lstnew(0);
-// }
+/*int	main(void)
+{
+	t_list *temp = ft_lstnew("aaaaaaaa");
+	temp->next = ft_lstnew("bbbbbbb");
+	temp->next->next = ft_lstnew("ccccccc");
+	while(temp)
+	{
+		printf("%s\n", temp->content);
+		temp = temp->next;
+	}
+}*/

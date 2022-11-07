@@ -40,3 +40,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	}
 	return (NULL);
 }
+
+/*int main(void)
+{
+	char	*str;
+	char	*str1;
+
+	str1 = "goumi";
+	str = "agoumi El Mehdi Agoumi";
+	printf("%s", ft_strnstr(str, str1, 10));
+}*/
