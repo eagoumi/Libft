@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:44:57 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/05 19:47:54 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/07 16:50:58 by ayagoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,13 +96,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 // 	char	*result1;
 // 	char	*s1 = "   \t  \n\n \t\t  \n\n\nHe";
 
-// 	result1 = ft_strtrim(s1, " \n\t");
+// 	result1 = ft_strtrim(NULL, "NULL");
 // 	printf("string are : %s\n", result1);
-// 	if (result1 == ((void *)0))
-//         printf("dddddd");
-// 	else
-// 		printf("hhhhhhh");
-// 	// printf("string are : %s", s, strlen("tripouille") + 1;
-
-// 	// "xxxxxxxxxxxxxxx", "x"
 // }

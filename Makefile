@@ -1,65 +1,61 @@
 NAME=libft.a
-CC=gcc -Wall -Wextra -Werror -c
+CC=cc -Wall -Wextra -Werror -c
 INCLUDE=./
-INCLUDE_BONUS=./
 PATH_SRC=./
-PATH_BNS=./
-PATH_OBJ=./
-PATH_BNS_OBJ=./
+PATH_OBJ=./obj/
 
-                                                                                                                               
 # fonction de la libft & Supplementaire 
 
-FILES_SRC=	ft_atoi \
-			ft_bzero \
-			ft_calloc \
-			ft_isalnum \
-			ft_isalpha \
-			ft_isascii \
-			ft_isdigit \
-			ft_isprint \
-			ft_memchr \
-			ft_memcmp \
-			ft_memcpy \
-			ft_memset \
-			ft_memmove \
-			ft_putchar_fd \
-			ft_putnbr_fd \
-			ft_putstr_fd \
-			ft_strchr \
-			ft_strdup \
-			ft_striteri \
-			ft_strjoin \
-			ft_strlcat \
-			ft_strlcpy \
-			ft_strlen \
-			ft_strmapi \
-			ft_strncmp \
-			ft_strnstr \
-			ft_strrchr \
-			ft_strtrim \
-			ft_substr \
-			ft_tolower \
-			ft_toupper \
-			ft_itoa \
-			ft_split \
-			ft_putendl_fd 
+FILES_SRC=	ft_atoi.c\
+			ft_bzero.c\
+			ft_calloc.c\
+			ft_isalnum.c\
+			ft_isalpha.c\
+			ft_isascii.c\
+			ft_isdigit.c\
+			ft_isprint.c\
+			ft_itoa.c\
+			ft_memchr.c\
+			ft_memcmp.c\
+			ft_memcpy.c\
+			ft_memmove.c\
+			ft_memset.c\
+			ft_putchar_fd.c\
+			ft_putendl_fd.c\
+			ft_putnbr_fd.c\
+			ft_putstr_fd.c\
+			ft_split.c\
+			ft_strchr.c\
+			ft_strdup.c\
+			ft_striteri.c\
+			ft_strjoin.c\
+			ft_strlcat.c\
+			ft_strlcpy.c\
+			ft_strlen.c\
+			ft_strmapi.c\
+			ft_strncmp.c\
+			ft_strnstr.c\
+			ft_strrchr.c\
+			ft_strtrim.c\
+			ft_substr.c\
+			ft_tolower.c\
+			ft_toupper.c
 
 # fonction Bonus
 
-FILES_BNS=	ft_lstnew \
-			ft_lstadd_front \
-			ft_lstsize \
-			ft_lstlast \
-			ft_lstadd_back \
-			ft_lstdelone \
-			ft_lstclear \
-			ft_lstiter \
-			ft_lstmap 
+FILES_BNS=	ft_lstadd_back.c\
+			ft_lstadd_front.c\
+			ft_lstclear.c\
+			ft_lstdelone.c\
+			ft_lstiter.c\
+			ft_lstlast.c\
+			ft_lstmap.c\
+			ft_lstnew.c\
+			ft_lstsize.c
 
-OBJ=$(addsuffix .o, $(addprefix $(PATH_OBJ), $(FILES_SRC)))
-OBJ_BONUS=$(addsuffix .o, $(addprefix $(PATH_BNS_OBJ), $(FILES_BNS)))
-
+OBJ=$(addprefix $(PATH_OBJ), $(FILES_SRC:.c=.o))
+OBJ_BONUS=$(addprefix $(PATH_OBJ), $(FILES_BNS:.c=.o))
+#OBJ_BONUS=
 
 DEF 	= 	\x1B[1;0m
 RED 	= 	\x1B[1;31m
@@ -71,29 +67,24 @@ YELLOW 	= 	\x1B[1;33m
 WHITE	= 	\x1b[37m
 
 all: $(NAME)
+
+
+$(NAME):$(OBJ)
 	@ar rcs $(NAME) $(OBJ)
-	@printf "\n\t\t\t      $(RED)$(NAME) $(GREEN) CREATED |✅|"
-	@printf "\n"
+	@printf "\n\t\t\t      $(RED)$(NAME) $(GREEN) CREATED |✅| \n"
 
-$(NAME):
+
+bonus: $(OBJ_BONUS)  $(NAME)
+	@ar rcs $(NAME) $(OBJ_BONUS)
+
+$(PATH_OBJ)%.o:./%.c
 	@mkdir -p $(PATH_OBJ)
-	@for FILE in $(FILES_SRC);do \
-	$(CC) $(addsuffix .c, $(addprefix $(PATH_SRC), $${FILE})) -o $(addsuffix .o, $(addprefix $(PATH_OBJ), $${FILE})) -I $(INCLUDE); \
-	printf "$(PURPLE)[ $(PURPLE)Object file$(WHITE) ||/\/\🔥/\/\|| ==> $(BLUE)$(PATH_OBJ)$(notdir $${FILE}).o$(SILVER) $(WHITE) <== $(PURPLE)] $(GREEN)Created ✅$(DEF)\n"; \
-	done
-
-bonus: $(NAME)
-	@for FILE in $(FILES_BNS);do \
-	$(CC) $(addsuffix .c, $(addprefix $(PATH_BNS), $${FILE})) -o $(addsuffix .o, $(addprefix $(PATH_BNS_OBJ), $${FILE})) -I $(INCLUDE_BONUS); \
-	printf "$(PURPLE)[ $(PURPLE)Object file$(WHITE) ||/\/\🔥/\/\|| ==> $(BLUE)$(PATH_BNS_OBJ)$(notdir $${FILE}).o$(SILVER) $(WHITE) <== $(PURPLE)] $(GREEN)Created ✅$(DEF)\n"; \
-	done
-	@ar rcs $(NAME) $(OBJ) $(OBJ_BONUS)
+	@$(CC) -c $< -o $@
+	@printf "$(SILVER)[$(PURPLE)Object file$(BLUE) $(notdir $@)$(SILVER)] $(GREEN)Created.$(DEF)\n" 
 
 clean:
-	@rm -rf *.o
-	@printf "\n$(BLUE)|🤧 - 🤧 - 🤧 - 🤧 - 🤧 - 🤧| $(RED) Cleaning are Completed $(YELLOW)|✅ - ✅ - ✅ - ✅ - ✅ - ✅|\n"; \
-
-	@printf "\n" \
+	@rm -rf $(PATH_OBJ)
+	@printf "\n$(BLUE)|🤧 - 🤧 - 🤧 - 🤧 - 🤧 - 🤧| $(RED) Cleaning are Completed $(YELLOW)|✅ - ✅ - ✅ - ✅ - ✅ - ✅|\n"
 
 fclean: clean
 	@rm -f $(NAME)
@@ -101,27 +92,14 @@ fclean: clean
 
 	@printf "\n" \
 
-re: fclean all bonus
-	@printf "\n\t\t$(YELLOW)             ==$(GREEN)--------------------$(YELLOW)== $(BLUE)\n"; \
-
-	@printf "\t\t$(YELLOW)             ||$(GREEN)--------------------$(YELLOW)||\n"; \
-
-	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||"; \
-
-	@printf "\n" \
-
-	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||"; \
-
-	@printf "\n" \
-
-	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||"; \
-
-	@printf "\n\t\t$(YELLOW)             ||$(GREEN)--------------------$(YELLOW)||\n"; \
-
-	@printf "\t\t$(YELLOW)             ==$(GREEN)--------------------$(YELLOW)== $(BLUE)\n"; \
-
-	@printf "\n" \
+re: fclean bonus all
+	@printf "\n\t\t$(YELLOW)             ==$(GREEN)--------------------$(YELLOW)== $(BLUE)\n"
+	@printf "\t\t$(YELLOW)             ||$(GREEN)--------------------$(YELLOW)||\n"
+	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||\n"
+	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||\n"
+	@printf "\t\t$(YELLOW)             ||$(GREEN) Re are Completed ✅$(YELLOW)||"
+	@printf "\n\t\t$(YELLOW)             ||$(GREEN)--------------------$(YELLOW)||\n"
+	@printf "\t\t$(YELLOW)             ==$(GREEN)--------------------$(YELLOW)== $(BLUE)\n"
 
 
-
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re bonus addObjbonus
