@@ -24,18 +24,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(pt, nmemb * size);
 	return (pt);
 }
-
-/*int	main(void)
-{
-	char	*str;
-	int		i;
-
-	i = 0;
-	str = ft_calloc(SIZE_MAX, SIZE_MAX);
-	while (str[i])
-	{
-		printf("%s", str);
-		i++;
-	}
-	free (str);
-}*/

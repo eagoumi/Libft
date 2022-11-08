@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 01:45:58 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 23:28:23 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:26:04 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (temporaire);
 }
-
-// int	main(void)
-// {
-// 	t_list *temp = ft_lstnew("aaaaaaaa");
-// 	t_list *result = ft_lstlast(temp);
-
-// 	printf("%s\n", result);
-// }

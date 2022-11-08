@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 22:59:52 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:53:40 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:33:53 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-/*char	ft_fon(unsigned int i, char s)
-{
-	return (s + 1);
-}
-
-int	main(void)
-{
-	char	*str;
-	char	*result;
-
-	str = "agoumi";
-	result = ft_strmapi(str, &ft_fon);
-	printf("%s", result);
-}*/

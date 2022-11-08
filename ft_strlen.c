@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 18:59:30 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:32:59 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 19:40:57 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,3 @@ size_t	ft_strlen(const char *c)
 		i++;
 	return (i);
 }
-
-/*int main(void)
-{
-    int i = 0;
-    char str[i];
-
-    while(str[i])
-    {
-        i++;
-    }
-    printf("len = %zu", i);
-    printf("len sys = %zu", ft_strlen(str));
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 21:59:42 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:00:51 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:26:52 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,3 @@ t_list	*ft_lstnew(void *content)
 	str->next = NULL;
 	return (str);
 }
-
-/*int	main(void)
-{
-	t_list *temp = ft_lstnew("aaaaaaaa");
-	temp->next = ft_lstnew("bbbbbbb");
-	temp->next->next = ft_lstnew("ccccccc");
-	while(temp)
-	{
-		printf("%s\n", temp->content);
-		temp = temp->next;
-	}
-}*/

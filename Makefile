@@ -67,13 +67,12 @@ WHITE	= 	\x1b[37m
 
 all: $(NAME)
 
-
-$(NAME):$(OBJ)
+$(NAME):$(OBJ) ./libft.h
 	@ar rcs $(NAME) $(OBJ)
 	@printf "\n\t\t\t\t\t\t      $(RED)$(NAME) $(GREEN) 𝘾 𝙍 𝙀 𝘼 𝙏 𝙀 𝘿  ✅ \n"
 
 
-bonus: $(OBJ_BONUS)  $(NAME)
+bonus: $(OBJ_BONUS)  $(NAME) ./libft.h
 	@ar rcs $(NAME) $(OBJ_BONUS)
 
 $(PATH_OBJ)%.o:./%.c
@@ -97,7 +96,7 @@ re: fclean bonus all
 	@printf "\t\t\t$(YELLOW)               ||$(GREEN) 𝙍 𝙀 - 𝙈 𝘼 𝙆 𝙄 𝙉 𝙂   𝘼 𝙍 𝙀   𝘾 𝙊 𝙈 𝙋 𝙇 𝙀 𝙏 𝙀 𝘿   ✅$(YELLOW)||\n"
 	@printf "\t\t\t$(YELLOW)               ||$(GREEN) 𝙍 𝙀 - 𝙈 𝘼 𝙆 𝙄 𝙉 𝙂   𝘼 𝙍 𝙀   𝘾 𝙊 𝙈 𝙋 𝙇 𝙀 𝙏 𝙀 𝘿   ✅$(YELLOW)||"
 	@printf "\n\t\t\t$(YELLOW)               ||$(GREEN)---------------------------------------------------$(YELLOW)||\n"
-	@printf "\t\t\t$(YELLOW)               ==$(GREEN)---------------------------------------------------$(YELLOW)== $(BLUE)\n"
+	@printf "\t\t\t$(YELLOW)               ==$(GREEN)---------------------------------------------------$(YELLOW)== $(BLUE)\n\n\n\n"
 
 
 .PHONY: all clean fclean re bonus

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:44:57 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:38:44 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:35:52 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,12 +90,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	free(temp);
 	return (str);
 }
-
-/*int	main(void)
-{
-	char	*result1;
-	char	*s1 = "   \t  \n\n \t\t  \n\n\nHe";
-
-	result1 = ft_strtrim(NULL, "NULL");
-	printf("string are : %s\n", result1);
-}*/

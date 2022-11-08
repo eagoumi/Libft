@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 03:32:36 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:07:22 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:32:23 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,3 @@ char	*ft_strchr(const char *ch, int s)
 	}
 	return (NULL);
 }
-
-/*int	main(void)
-{
-	char	*str;
-	char	*s;
-
-	s = "agou";
-	int i = 0;
-	str = ft_strchr("agoumi", 0);
-	const char *s = "teste";
-	printf("%p\n", ft_strchr(s, '\0'));
-	printf("%p\n", strchr(s, '\0'));
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 21:52:15 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:39:07 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:36:04 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	st[i] = '\0';
 	return (st);
 }
-
-/*int	main(void)
-{
-	unsigned int r1;
-	char *r = ft_substr("hola", 5, 2);
-	r1 = substr("ABCDEFGH", 9, 9);
-	printf("mine :|%s| \n", r);
-	printf("sys : |%s| \n", r1);
-	printf("mine :|%u| \n", r1);
-}*/

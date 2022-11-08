@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 20:08:53 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:38:30 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:35:39 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,3 @@ char	*ft_strrchr(const char *ch, int s)
 	}
 	return (NULL);
 }
-
-/*int	main(void)
-{
-	char	*str;
-
-	str = ft_strrchr("asdc", 'a');
-	printf("|%s|\n", str);
-	printf("|%s|\n", strrchr("asdc", 'a'));
-}*/

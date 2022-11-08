@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 12:10:08 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 21:49:45 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 19:51:14 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,18 +81,3 @@ char	*ft_itoa(int n)
 	itoastr[j] = '\0';
 	return (itoastr);
 }
-
-/*int	main(void)
-{
-	long long	n;
-	char		*str;
-	long long	str1;
-
-	n = 100;
-	str = ft_itoa(n);
-	str1 = ft_revnum(n,0);
-	printf("number are = %lld\n", n);
-	printf("number are rev = %lld\n", str1);
-	printf("int are converted to string are = %s\n", str);
-	printf("%zu", ft_countnum(n));
-}*/

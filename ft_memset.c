@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayagoumi <ayagoumi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 15:07:43 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/07 22:04:57 by ayagoumi         ###   ########.fr       */
+/*   Updated: 2022/11/08 20:29:47 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,8 @@ void	*ft_memset(void *d, int c, size_t lend)
 	i = 0;
 	while (i < lend)
 	{
-		rgm[i] = (char)c;
+		rgm[i] = (unsigned char)c;
 		i++;
 	}
 	return (rgm);
 }
-
-/*int	main(void)
-{
-	char	s[100];
-	char	s1[100];
-
-	printf("%s\n", ft_memset(s1, '\0', 5));
-	printf("%s\n", memset(s, '\0', 5));
-}*/
