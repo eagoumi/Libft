@@ -6,7 +6,7 @@
 /*   By: eagoumi <eagoumi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 15:07:43 by eagoumi           #+#    #+#             */
-/*   Updated: 2022/11/08 20:29:47 by eagoumi          ###   ########.fr       */
+/*   Updated: 2022/11/09 13:17:30 by eagoumi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *d, int c, size_t lend)
 {
-	char	*rgm;
-	size_t	i;
+	unsigned char	*rgm;
+	size_t			i;
 
 	rgm = d;
 	i = 0;
